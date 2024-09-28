@@ -1,0 +1,265 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main-div{
+    background-color: #0f0f0f;
+}
+
+#myNav {
+
+    width: 100%;
+    background-color: #2E2d2d;
+    color: #ffff;
+}
+
+#item a {
+    color: white;
+}
+
+#item a:hover {
+    color: #A59adb;
+}
+
+
+#but{
+    background-color: #ffff;
+    margin-top: 7px;
+    margin-left: 5px;
+      width: 22px;
+       height: 22px; 
+    
+      object-fit: cover;
+      overflow: hidden;
+       border-radius: 50%;
+      border: transparent;
+   }
+   #but{
+     font-size: 20px;
+   }
+   .follower {
+  
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    margin-top: 25px;
+    margin-left: 25px;
+    pointer-events: none;
+    opacity: 0;
+    border-radius: 50%;
+    animation-name: follower_animation;
+    animation-duration: 0.8s;
+  }
+  @keyframes follower_animation{
+    from{
+      opacity: 1;
+      transform: scale(0);
+    }
+    to{
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
+   .box1{
+    
+        width: 100%;
+        margin: auto;
+        min-height: 350px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 32px;
+   }
+   .info {
+       padding: 10px;
+       width: 490px;
+       min-height: 80%;
+       color: #ffff;
+       background-color: #1f1e1e;
+       border-radius: 10px;
+       box-shadow: 0px 5px 7px 0px #2E2d2d;
+   }
+   .info p{
+
+      color: #ffff;
+      font-weight: 700;
+   }
+   .info h4{
+      text-align: center;}
+      .info ul{
+        margin-left: 20px;
+      }
+   .image{
+
+        width: 450px;
+        height: 80%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        object-fit: cover;
+       }
+       #animatedImg{
+         width: 350px;
+       }
+       .img-box{
+        
+        margin-left: 160px;
+        top: -350px;
+        width: 60px;
+        position: absolute;
+        animation-name: deliveryLogo;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-delay: 1.9s;
+        animation-iteration-count: 1;
+
+    }
+    .img-box:hover{
+        filter: drop-shadow(1px 1px 15px #9689d6);
+    }
+
+    @keyframes deliveryLogo {
+        0% {
+          scale:0.5;
+            top:0px;
+            transform: rotateY(360deg);
+        }
+        10% , 30%{
+
+          top: 10%;
+
+        }
+        100% {
+            top: 0%;
+            margin-top: 50px;
+        }
+    }
+    .myLearning{
+        margin-top: 50px;
+        text-align: center;
+        color: #ffff;
+         width: 100%;
+         height: 590px;
+         background-color: #111111;
+    }
+    .mySkill{
+         width: 50%;
+         margin: 40px  auto;
+         display: flex;
+         align-items: center;
+         justify-content: space-around;
+         flex-wrap: wrap;
+         column-gap: 30px;
+         row-gap: 30px;
+    }
+    .skill{
+        width: 120px;
+        height: 100px;
+        border-radius: 10px;
+        background-color: #9a89ee;
+        box-shadow: 0px 5px 3px #242424;
+        object-fit: cover;
+        overflow: hidden;
+        
+    }
+    .imgLogo{
+        margin-top: 8px;
+        width: 80px;
+        height: 80px;
+    }
+    .tools{
+         margin: 20px auto;
+         width: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: space-around;
+         flex-wrap: wrap;
+    }
+
+   .skill:hover{
+      scale: 1.1;
+   }
+   footer{
+    /* margin-top: 40px; */
+    height: 50px;
+    width: 100%;
+    background-color: #927ef7;
+    text-align: center; vertical-align: middle;
+    line-height: 50px;    
+}
+@media screen and (max-width : 600px){
+  .box1{
+    
+    width: 100%;
+    margin: auto;
+    min-height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+.info {
+  margin: 20px;
+  width: 90%;
+}
+.image{
+  margin-top: 30px;
+  margin-left: 10px;
+  width: 450px;
+  height: 80%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  object-fit: cover;
+ }
+ #animatedImg{
+  width: 150px;
+}
+  .img-box{
+
+    top: -350px;
+    width: 60px;
+    position: absolute;
+    animation-name: deliveryLogo;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.9s;
+    animation-iteration-count: 1;
+}
+@keyframes deliveryLogo {
+  0% {
+    scale:0.5;
+      top:0px;
+      transform: rotateY(360deg);
+  }
+  10% , 30%{
+
+    top: 20%;
+
+  }
+  100% {
+      top: 75%;
+      margin-top: 50px;
+  }
+}
+.myLearning{
+  width: 100%;
+}
+.mySkill{
+  width: 80%;
+}
+.tools{
+  width: 80%;
+  row-gap: 10px;
+}
+footer{
+  font-size: 12px;
+  text-align: center;
+  margin-top: 85%;
+}
+}

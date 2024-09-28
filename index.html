@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="StyleOfP.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <title>home</title>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg   fixed-top" id="myNav">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon icon"><i class="fa-solid fa-bars" style="color: white;"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav" id="item">
+        <li class="nav-item active ">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link active">About</a>
+        </li>
+        <li class="nav-item active">
+          <a href="project.html" class="nav-link active">Projects</a>
+        </li>
+        <li>
+          <button id="but" onclick="myFunction()"><i id="ibut" class="fa-solid fa-circle-half-stroke"></i></button>
+
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <div id="main-div">
+    <div id="home">
+      <div class="home-div">
+        <h2 class="wave"> Hello! <p class="waving">&#128075</p> I'M</h2>
+        <h1> Priya </h1>
+        <h1> Marmat</h1>
+      </div>
+      <div class="card1">
+        <div class="card-inner">
+          <div class="card-front">
+            <img
+              src="https://img.freepik.com/premium-photo/computer-screen-with-purple-background-with-blue-light-top_1064589-163754.jpg"
+              alt="" height="200px">
+
+          </div>
+          <div class="card-back">
+            <img
+              src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-1200080,resizemode-75,msid-107971656/jobs/mid-career/india-inc-looks-to-build-pipeline-of-female-ai-talent.jpg"
+              alt="" height="200px">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="skills">
+      <div class="slider">
+        <div class="caption">
+          <h3 class="skills-cont"> skills: <span class="text second-text">raju</span></h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="about">
+      <div id="about">
+        <h2>About Me</h2>
+        <p> <i> Currently in the third year of B.Tech with a major in Artificial Intelligence and Data Science, securing
+            a
+            CGPA 9.09 up to this date.</i></p>
+        <p> <i> Although I am at an early stage in my professional journey, I have worked upon many projects that give a
+            boost to my skills in web development and data visualization. I know HTML, CSS, SQL and JavaScript and I am
+            hands-on with respective tools like Power BI and Figma.</i>
+        </p>
+        <p><i>
+            The passion to apply knowledge towards solving real-world problems is strong in me. I look forward with
+            eagerness to learning more so I can grow even more in AI and Data Science. Looking forward for my skills to
+            go
+            to work innovatively for a difference-making.
+          </i>
+        </p>
+      </div>
+
+
+      <div class=" box">
+        <div id="pixel"></div>
+      </div>
+      <div id="contactMe">
+        <h2>Contact With me</h2>
+        <p>Feel free to connect with me</p>
+        <div class="logo-con">
+          <div class="logo"><a href="https://github.com/priya-marmat"><i class="fa-brands fa-github"></i></a></div>
+          <div class="logo"><a href="priyamarmt@gmail.com"><i class="fa-regular fa-envelope"></i></a></div>
+          <div class="logo"><a href="https://www.linkedin.com/in/priya-marmat-8407212aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <footer>
+        <p>Designed and Developed by <i style="color: rgb(66, 66, 66);">Priya Marmat</i></p>
+      </footer>
+
+
+
+    </div>
+    <script>
+      let mode = "dark";
+      let element = document.querySelector("#main-div");
+      let but = document.querySelector("#but")
+      let ibut = document.querySelector("#ibut");
+      let about = document.querySelector(".about");
+      let contact = document.querySelector("#contactMe")
+      let skills = document.querySelector("#skills");
+      let navbar = document.querySelector("#myNav");
+      function myFunction() {
+        console.log("hi");
+        if (mode == "dark") {
+          element.style.backgroundColor = "white";
+          but.style.backgroundColor = "#111111"
+          about.style.backgroundColor = "rgb(248, 245, 245)"
+          contact.style.backgroundColor = "rgb(248, 245, 245)"
+          ibut.style.color = "white"
+          about.style.color = "black"
+          skills.style.display = "none"
+          navbar.style.backgroundColor = " #9c8ee2"
+          mode = "light"
+
+
+        }
+        else {
+          element.style.backgroundColor = "black";
+          mode = "dark";
+          but.style.backgroundColor = "white"
+          ibut.style.color = "black"
+          about.style.backgroundColor = "#111111"
+          contact.style.backgroundColor = "#111111"
+          about.style.color = "white"
+          navbar.style.backgroundColor = " #2E2d2d"
+
+
+
+        }
+      }
+
+      const text = document.querySelector(".second-text");
+      const textload = () => {
+        setTimeout(() => {
+          text.textContent = "Frontend Development"
+        }, 0)
+        setTimeout(() => {
+          text.textContent = "Data Visualization"
+        }, 4000)
+        setTimeout(() => {
+          text.textContent = "Data analysis"
+        }, 8000)
+      }
+
+      textload();
+      setInterval(textload, 12000);
+      let colors = ["rgb(247, 60, 60)", "hotpink", "#A59adb", "skyblue", "violet", "rgb(241, 177, 57)", "pink", "rgb(95, 241, 95)"];
+      let i = 0;
+
+      document.onmousemove = function (e) {
+
+        i++;
+
+        let x = e.pageX;
+        let y = e.pageY;
+
+        let span = document.createElement("span");
+        span.classList.add("follower");
+        span.style.top = y + "px";
+        span.style.left = x + "px";
+        span.style.backgroundColor = colors[i - 1];
+        document.body.appendChild(span);
+
+        if (i == colors.length) {
+          i = 0;
+
+        }
+        setTimeout(() => {
+          span.remove();
+        }, 1000)
+      }
+      let w = 30;
+      let h = 30;
+      function pixel() {
+        for (var i = 0; i < h; i++) {
+          for (var j = 0; j < w; j++) {
+            let span = document.createElement('span');
+            let random = Math.random();
+            let randomFixed = random.toFixed(2);
+            document.getElementById('pixel').appendChild(span);
+            span.style.left = j * 10 + 'px';
+            span.style.top = i * 10 + 'px';
+            span.style.backgroundPosition = -j * 10 + 'px ' + -i * 10 + 'px, center';
+            span.style.animationDelay = randomFixed + 's';
+          }
+        }
+      }
+      pixel();
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
